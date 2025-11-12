@@ -43,7 +43,6 @@ jobs:
           - target: aarch64-linux-android
             os: ubuntu-latest
     runs-on: ${{ matrix.os }}
-    name: ${{ matrix.bin }}-${{ matrix.target }}
     steps:
       - uses: actions/checkout@v4
         with:
