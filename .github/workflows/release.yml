@@ -57,7 +57,7 @@ jobs:
           target: ${{ matrix.target }}
           RUSTFLAGS: "-C opt-level=3 -C strip=symbols -C codegen-units=1 -C debuginfo=0"
           tag: nightly
-          profile: release-small
+          # profile: release-small
           upload_artifact: true
           allowUpdates: true
           features: "cli"
